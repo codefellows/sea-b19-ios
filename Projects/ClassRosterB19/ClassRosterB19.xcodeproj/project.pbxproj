@@ -15,6 +15,8 @@
 		EF0D2A1A197D89C0001C9452 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0D2A19197D89C0001C9452 /* PersonTests.swift */; };
 		EF0D2A1C197D8AA8001C9452 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0D2A1B197D8AA8001C9452 /* Person.swift */; };
 		EF0D2A1D197D8B4F001C9452 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0D2A1B197D8AA8001C9452 /* Person.swift */; };
+		EF39BCC5197ED3EC00AED653 /* People.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF39BCC4197ED3EC00AED653 /* People.plist */; };
+		EF39BCC6197ED49400AED653 /* People.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF39BCC4197ED3EC00AED653 /* People.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		EF0D2A0C197D8766001C9452 /* ClassRosterB19Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRosterB19Tests.swift; sourceTree = "<group>"; };
 		EF0D2A19197D89C0001C9452 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		EF0D2A1B197D8AA8001C9452 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EF39BCC3197ED1A500AED653 /* ClassRoster.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClassRoster.playground; sourceTree = "<group>"; };
+		EF39BCC4197ED3EC00AED653 /* People.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = People.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				EF0D2A0C197D8766001C9452 /* ClassRosterB19Tests.swift */,
 				EF0D2A19197D89C0001C9452 /* PersonTests.swift */,
 				EF0D2A0A197D8766001C9452 /* Supporting Files */,
+				EF39BCC3197ED1A500AED653 /* ClassRoster.playground */,
 			);
 			path = ClassRosterB19Tests;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				EF0D2A1B197D8AA8001C9452 /* Person.swift */,
+				EF39BCC4197ED3EC00AED653 /* People.plist */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF39BCC5197ED3EC00AED653 /* People.plist in Resources */,
 				EF0D29FF197D8766001C9452 /* Main.storyboard in Resources */,
 				EF0D2A01197D8766001C9452 /* Images.xcassets in Resources */,
 			);
@@ -229,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF39BCC6197ED49400AED653 /* People.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +439,7 @@
 				EF0D2A12197D8766001C9452 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF0D2A13197D8766001C9452 /* Build configuration list for PBXNativeTarget "ClassRosterB19Tests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +448,7 @@
 				EF0D2A15197D8766001C9452 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

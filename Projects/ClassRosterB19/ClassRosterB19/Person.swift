@@ -8,24 +8,27 @@
 
 import UIKit
 
-class Person : NSObject {
+class Person {
+    
     var firstName : String
     var lastName : String
-    
+
     init(firstName : String, lastName : String) {
         self.firstName = firstName
         self.lastName = lastName
-        super.init()
     }
-}
-
-class SwiftPerson {
     
-    var firstName : String
-    var lastName : String
-
-    init(firstName : String, lastName : String) {
-        self.firstName = firstName
-        self.lastName = lastName
+    class func defaultPeopleArray() -> Array<Person> {
+        var people = Array<Person>()
+        let plistPath = NSBundle.mainBundle().pathForResource("People", ofType: "plist")
+        let personArray = NSArray(contentsOfFile: plistPath)
+        
+        for personDict in personArray {
+            if let person = personDict as? Dictionary<String, String> {
+                let newPerson = Person(firstName: person["firstName"] as String, lastName: person["lastName"] as String)
+                people += newPerson
+            }
+        }
+        return people
     }
 }

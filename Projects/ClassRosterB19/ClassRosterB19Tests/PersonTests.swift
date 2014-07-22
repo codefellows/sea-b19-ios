@@ -24,7 +24,10 @@ class PersonTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
+        
+        let newPerson = Person(firstName: "John", lastName: "Clem")
     }
 
+    
 
 }
