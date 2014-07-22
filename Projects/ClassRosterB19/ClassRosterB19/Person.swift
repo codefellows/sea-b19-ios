@@ -2,33 +2,50 @@
 //  Person.swift
 //  ClassRosterB19
 //
-//  Created by John Clem on 7/21/14.
-//  Copyright (c) 2014 Learn Swift. All rights reserved.
+//  Created by Bradley Johnson on 7/21/14.
+//  Copyright (c) 2014 learnswift. All rights reserved.
 //
 
-import UIKit
+import Foundation
+
 
 class Person {
     
     var firstName : String
     var lastName : String
-
+    
     init(firstName : String, lastName : String) {
         self.firstName = firstName
         self.lastName = lastName
     }
     
-    class func defaultPeopleArray() -> Array<Person> {
+    func fullName() -> String {
+        return self.firstName + self.lastName
+    }
+    
+    class func loadPeopleFromPlist () -> Array<Person> {
         var people = Array<Person>()
         let plistPath = NSBundle.mainBundle().pathForResource("People", ofType: "plist")
-        let personArray = NSArray(contentsOfFile: plistPath)
+        let peopleArray = NSArray(contentsOfFile: plistPath)
         
-        for personDict in personArray {
-            if let person = personDict as? Dictionary<String, String> {
-                let newPerson = Person(firstName: person["firstName"] as String, lastName: person["lastName"] as String)
+        for person in peopleArray {
+            if let thePerson = person as? Dictionary<String, String> {
+                let firstName = thePerson["firstName"] as String
+                let lastName = thePerson["lastName"] as String
+                let newPerson = Person(firstName: firstName, lastName: lastName)
                 people += newPerson
             }
         }
         return people
     }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
