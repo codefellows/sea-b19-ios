@@ -12,7 +12,7 @@ class PeopleViewController: UIViewController, UITableViewDataSource {
     
     var people = Person.loadPeopleFromPlist()
     
-    @IBOutlet var tableView: UITableView
+    @IBOutlet var tableView: UITableView?
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -6,8 +6,7 @@
 //  Copyright (c) 2014 learnswift. All rights reserved.
 //
 
-import Foundation
-
+import UIKit
 
 class Person {
     
@@ -17,6 +16,7 @@ class Person {
     init(firstName : String, lastName : String) {
         self.firstName = firstName
         self.lastName = lastName
+        
     }
     
     func fullName() -> String {
