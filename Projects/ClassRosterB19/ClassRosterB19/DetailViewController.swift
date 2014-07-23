@@ -12,13 +12,24 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var firstNameTextField: UITextField?
     @IBOutlet var lastNameTextField: UITextField?
-    var person : Person!
+    @IBOutlet var imageView : UIImageView?
     
+    let textFieldPadding = 100
+    
+    var person : Person!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         firstNameTextField!.text = person.firstName
         lastNameTextField!.text = person.lastName
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.imageView!.layer.cornerRadius = 0.5 * self.imageView!.frame.width
+        self.imageView!.layer.masksToBounds = true
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -32,20 +43,57 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    //MARK: UITextFieldDelegate
-    
     func textFieldDidBeginEditing(textField: UITextField!) {
-        UIView.animateWithDuration(0.4) {
+        println("began editing")
+        
+        let currentWidth = self.view.bounds.width
+        let currentHeight = self.view.bounds.height
+        let newY = 0 + textField.frame.origin.y - self.textFieldPadding
+        let currentX = self.view.bounds.origin.x
+        
+        UIView.animateWithDuration(0.3, animations:{ () -> Void
+            in
+            
+//            self.view.bounds = CGRect(x: currentX, y: newY, width: currentWidth, height:currentHeight)
             self.view.transform = CGAffineTransformTranslate(self.view.transform, 0.0, -120.0)
-        }
+            
+            })
     }
     
     func textFieldDidEndEditing(textField: UITextField!) {
-        UIView.animateWithDuration(0.4) {
+        println("did end editing")
+        
+        let currentWidth = self.view.bounds.width
+        let currentHeight = self.view.bounds.height
+//        UIView.animateWithDuration(0.3, animations:{ () -> Void
+//            in
+//            
+//            self.view.bounds = CGRect(x: 0, y: 0, width: currentWidth, height:currentHeight)
+//            
+//            })
+
+        UIView.animateWithDuration(0.3) {
+//            self.view.bounds = CGRect(x: 0, y: 0, width: currentWidth, height:currentHeight)
             self.view.transform = CGAffineTransformTranslate(self.view.transform, 0.0, 120.0)
         }
+        
     }
-
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
+//        for control in self.view.subviews {
+//            if let theControl = control as? UITextField {
+//                theControl.resignFirstResponder()
+//            }
+        self.view.endEditing(true)
+        //}
+    }
+    
+    
     /*
     // #pragma mark - Navigation
 

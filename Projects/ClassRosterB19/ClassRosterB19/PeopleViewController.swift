@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PeopleViewController: UIViewController, UITableViewDataSource {
+class PeopleViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
     var people = Person.loadPeopleFromPlist()
     
@@ -17,7 +17,8 @@ class PeopleViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         
         self.tableView!.dataSource = self
-        
+        self.tableView!.delegate = self
+        self.title = "People"
         self.navigationController.navigationItem.title = "People"
     }
 
@@ -41,7 +42,7 @@ class PeopleViewController: UIViewController, UITableViewDataSource {
         let personForRow = people[indexPath.row]
         cell.textLabel.text = personForRow.fullName()
 
-        println("dequeue reusable cell")
+//        println("dequeue reusable cell")
         return cell
     }
     
@@ -54,6 +55,18 @@ class PeopleViewController: UIViewController, UITableViewDataSource {
             let newPerson = Person(firstName: "", lastName: "")
             people.append(newPerson)
             destination.person = newPerson
+        }
+    }
+    
+    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        println(indexPath.row)
+        
+        let detail = self.storyboard.instantiateViewControllerWithIdentifier("detail") as DetailViewController
+        
+        detail.person = self.people[indexPath.row]
+        
+        if self.navigationController {
+            self.navigationController.pushViewController(detail, animated: true)
         }
     }
     
