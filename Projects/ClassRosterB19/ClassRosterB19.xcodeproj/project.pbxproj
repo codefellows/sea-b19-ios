@@ -11,6 +11,7 @@
 		A2DD96D0197F068C0061FC75 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DD96CF197F068C0061FC75 /* PeopleViewController.swift */; };
 		A2DD96D2197F06A00061FC75 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DD96D1197F06A00061FC75 /* Person.swift */; };
 		A2DD96D4197F09B80061FC75 /* People.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2DD96D3197F09B80061FC75 /* People.plist */; };
+		A2E3C55C19803B3700CF15C3 /* puppy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2E3C55B19803B3700CF15C3 /* puppy.jpg */; };
 		EF0D29FA197D8766001C9452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0D29F9197D8766001C9452 /* AppDelegate.swift */; };
 		EF0D29FF197D8766001C9452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0D29FD197D8766001C9452 /* Main.storyboard */; };
 		EF0D2A01197D8766001C9452 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF0D2A00197D8766001C9452 /* Images.xcassets */; };
@@ -33,6 +34,7 @@
 		A2DD96CF197F068C0061FC75 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		A2DD96D1197F06A00061FC75 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A2DD96D3197F09B80061FC75 /* People.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = People.plist; sourceTree = "<group>"; };
+		A2E3C55B19803B3700CF15C3 /* puppy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppy.jpg; sourceTree = "<group>"; };
 		EF0D29F4197D8766001C9452 /* ClassRosterB19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassRosterB19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0D29F8197D8766001C9452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF0D29F9197D8766001C9452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		EF0D29F7197D8766001C9452 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A2E3C55B19803B3700CF15C3 /* puppy.jpg */,
 				EF0D2A00197D8766001C9452 /* Images.xcassets */,
 				EF0D29F8197D8766001C9452 /* Info.plist */,
 			);
@@ -227,6 +230,7 @@
 			files = (
 				A2DD96D4197F09B80061FC75 /* People.plist in Resources */,
 				EF0D29FF197D8766001C9452 /* Main.storyboard in Resources */,
+				A2E3C55C19803B3700CF15C3 /* puppy.jpg in Resources */,
 				EF0D2A01197D8766001C9452 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
