@@ -37,17 +37,15 @@ class ViewController: UIViewController, NSURLSessionDownloadDelegate {
                 (resumeData) in
                 self.resumeData = resumeData
                 self.isDownloading = false
-                sender.titleLabel.text = "Resume"
+                sender.setTitle("Resume", forState: UIControlState.Normal)
                 self.progressView.hidePopUpViewAnimated(true)
             }
-        } else if sender.titleLabel.text == "Resume" {
-            if let resumeData : NSData = self.resumeData {
-                downloadTask = session.downloadTaskWithResumeData(resumeData)
-                downloadTask.resume()
-                self.isDownloading = true
-                sender.titleLabel.text = "Pause"
-                self.progressView.showPopUpViewAnimated(true)
-            }
+        } else if let resumeData : NSData = self.resumeData {
+            downloadTask = session.downloadTaskWithResumeData(resumeData)
+            downloadTask.resume()
+            self.isDownloading = true
+            sender.setTitle("Pause", forState: UIControlState.Normal)
+            self.progressView.showPopUpViewAnimated(true)
         } else {
             let downloadURL = "http://devstreaming.apple.com/videos/wwdc/2014/228xxnfgueiskhi/228/228_hd_a_look_inside_presentation_controllers.mov?dl=1"
             let request = NSURLRequest(URL: NSURL(string: downloadURL))
@@ -55,7 +53,7 @@ class ViewController: UIViewController, NSURLSessionDownloadDelegate {
             downloadTask.resume()
             self.isDownloading = true
             self.progressView.showPopUpViewAnimated(true)
-            sender.titleLabel.text = "Pause"
+            sender.setTitle("Pause", forState: UIControlState.Normal)
         }
     }
     
