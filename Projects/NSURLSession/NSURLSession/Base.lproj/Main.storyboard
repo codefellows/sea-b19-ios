@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NSURLSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TvR-HR-rBd" customClass="ASProgressPopUpView">
+                                <rect key="frame" x="20" y="299" width="560" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZg-jo-ttV">
+                                <rect key="frame" x="20" y="309" width="560" height="30"/>
+                                <state key="normal" title="Start Download">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DxI-3o-aBX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RZg-jo-ttV" firstAttribute="leading" secondItem="TvR-HR-rBd" secondAttribute="leading" id="0Av-VB-jND"/>
+                            <constraint firstItem="TvR-HR-rBd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="5ca-Zo-JgL"/>
+                            <constraint firstItem="RZg-jo-ttV" firstAttribute="top" secondItem="TvR-HR-rBd" secondAttribute="bottom" constant="8" symbolic="YES" id="aBz-ib-Axx"/>
+                            <constraint firstItem="RZg-jo-ttV" firstAttribute="trailing" secondItem="TvR-HR-rBd" secondAttribute="trailing" id="aox-ZB-1cV"/>
+                            <constraint firstAttribute="trailing" secondItem="TvR-HR-rBd" secondAttribute="trailing" constant="20" id="cwj-dI-qdr"/>
+                            <constraint firstAttribute="centerY" secondItem="TvR-HR-rBd" secondAttribute="centerY" id="lTj-9P-WW0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="downloadButton" destination="RZg-jo-ttV" id="hXa-kj-1BN"/>
+                        <outlet property="progressView" destination="TvR-HR-rBd" id="KAy-n8-XfY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
