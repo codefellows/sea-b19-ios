@@ -1,0 +1,793 @@
+{
+    "has_more" : true,
+    "items" : [
+               {
+               "answer_count" : 4,
+               "last_edit_date" : 1404232795,
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/155417\/chalkers",
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/0333c8c993f63d263c9bc59ad2c35a9b?s=128&d=identicon&r=PG",
+               "user_id" : 155417,
+               "display_name" : "Chalkers",
+               "reputation" : 501,
+               "user_type" : "registered"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/24004776\/input-from-the-keyboard-in-command-line-application",
+               "tags" : [
+                         "osx",
+                         "cocoa",
+                         "swift"
+                         ],
+               "view_count" : 1909,
+               "creation_date" : 1401750952,
+               "is_answered" : true,
+               "title" : "Input from the keyboard in command line application",
+               "accepted_answer_id" : 24021467,
+               "last_activity_date" : 1406739190,
+               "question_id" : 24004776,
+               "score" : 15
+               },
+               {
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/3892346\/potter",
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/b834aed94e56d784c7d30d7dce2ebe04?s=128&d=identicon&r=PG&f=1",
+               "user_id" : 3892346,
+               "display_name" : "Potter",
+               "reputation" : 1,
+               "user_type" : "registered"
+               },
+               "is_answered" : false,
+               "score" : 0,
+               "answer_count" : 0,
+               "creation_date" : 1406739186,
+               "title" : "Screen&#39;s real size is bigger than what I see",
+               "last_activity_date" : 1406739186,
+               "link" : "http:\/\/stackoverflow.com\/questions\/25042580\/screens-real-size-is-bigger-than-what-i-see",
+               "question_id" : 25042580,
+               "view_count" : 9,
+               "tags" : [
+                         "ios",
+                         "swift",
+                         "sprite-kit",
+                         "xcode6"
+                         ]
+               },
+               {
+               "owner" : {
+               "accept_rate" : 61,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/1334703\/%e5%ad%a4%e9%ad%82%e6%a5%9a",
+               "user_id" : 1334703,
+               "display_name" : "孤魂楚",
+               "reputation" : 196,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/eba1a2fe0dcc435db3c375a342b49ceb?s=128&d=identicon&r=PG&f=1"
+               },
+               "is_answered" : false,
+               "score" : 0,
+               "answer_count" : 0,
+               "creation_date" : 1406739158,
+               "title" : "swift:How radio menu?",
+               "last_activity_date" : 1406739158,
+               "link" : "http:\/\/stackoverflow.com\/questions\/25042568\/swifthow-radio-menu",
+               "question_id" : 25042568,
+               "view_count" : 3,
+               "tags" : [
+                         "osx",
+                         "swift",
+                         "swift-playground"
+                         ]
+               },
+               {
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/2720967\/samiljin",
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/309c4d85fcd3e372ac41d89c560ca934?s=128&d=identicon&r=PG&f=1",
+               "user_id" : 2720967,
+               "display_name" : "samiljin",
+               "reputation" : 15,
+               "user_type" : "registered"
+               },
+               "is_answered" : false,
+               "score" : 0,
+               "answer_count" : 0,
+               "creation_date" : 1406738956,
+               "title" : "prepareForSegue called but not loading the next UIViewController",
+               "last_activity_date" : 1406738956,
+               "link" : "http:\/\/stackoverflow.com\/questions\/25042491\/prepareforsegue-called-but-not-loading-the-next-uiviewcontroller",
+               "question_id" : 25042491,
+               "view_count" : 8,
+               "tags" : [
+                         "ios",
+                         "uiviewcontroller",
+                         "swift",
+                         "segue",
+                         "uistoryboardsegue"
+                         ]
+               },
+               {
+               "answer_count" : 1,
+               "last_edit_date" : 1406738005,
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/3876172\/tosen",
+               "profile_image" : "http:\/\/i.stack.imgur.com\/LtAN4.jpg?s=128&g=1",
+               "user_id" : 3876172,
+               "display_name" : "Tosen",
+               "reputation" : 34,
+               "user_type" : "registered"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/25034515\/load-a-view-and-its-webview-object-in-the-background-and-then-performing-the",
+               "tags" : [
+                         "ios",
+                         "xcode",
+                         "uiwebview",
+                         "swift"
+                         ],
+               "view_count" : 26,
+               "creation_date" : 1406716129,
+               "is_answered" : false,
+               "title" : "Load a View (and it&#39;s WebView object) in the Background and then performing the Segue",
+               "last_activity_date" : 1406738005,
+               "question_id" : 25034515,
+               "score" : 0
+               },
+               {
+               "answer_count" : 2,
+               "last_edit_date" : 1406301007,
+               "bounty_amount" : 50,
+               "owner" : {
+               "accept_rate" : 80,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/59541\/nate-cook",
+               "user_id" : 59541,
+               "display_name" : "Nate Cook",
+               "reputation" : 4695,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/5f463dd4e7af28b64ad8f0e032ee82dc?s=128&d=identicon&r=PG"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/24887454\/how-can-i-retrieve-swift-header-files-for-cocoa-apis",
+               "tags" : [
+                         "objective-c",
+                         "xcode",
+                         "cocoa",
+                         "swift"
+                         ],
+               "view_count" : 181,
+               "creation_date" : 1406032149,
+               "is_answered" : true,
+               "title" : "How can I retrieve Swift &quot;header&quot; files for Cocoa APIs?",
+               "bounty_closes_date" : 1406818602,
+               "last_activity_date" : 1406737971,
+               "question_id" : 24887454,
+               "score" : 6
+               },
+               {
+               "answer_count" : 1,
+               "last_edit_date" : 1406737897,
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/1556715\/rohit",
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/63aa576412fa8b694f0f92b9f47f5097?s=128&d=identicon&r=PG&f=1",
+               "user_id" : 1556715,
+               "display_name" : "Rohit",
+               "reputation" : 340,
+               "user_type" : "registered"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/25035943\/xcode-6-storyboard-size-not-changing-when-selecting-wregular-hregular-from-w",
+               "tags" : [
+                         "ios",
+                         "swift",
+                         "xcode6"
+                         ],
+               "view_count" : 14,
+               "creation_date" : 1406720517,
+               "is_answered" : true,
+               "title" : "Xcode 6: storyboard size not changing when selecting w:Regular h:Regular from w:compact h:regular",
+               "last_activity_date" : 1406737897,
+               "question_id" : 25035943,
+               "score" : 1
+               },
+               {
+               "answer_count" : 0,
+               "last_edit_date" : 1406737589,
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/3722523\/user3722523",
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/8f654127206d78b1e5b448f7206f03ea?s=128&d=identicon&r=PG&f=1",
+               "user_id" : 3722523,
+               "display_name" : "user3722523",
+               "reputation" : 43,
+               "user_type" : "registered"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/24983177\/found-nil-while-unwrapping-an-optional-value-spritekit",
+               "tags" : [
+                         "ios",
+                         "swift",
+                         "sprite-kit"
+                         ],
+               "view_count" : 80,
+               "creation_date" : 1406479731,
+               "is_answered" : false,
+               "title" : "found nil while unwrapping an Optional value - spriteKit",
+               "last_activity_date" : 1406737589,
+               "question_id" : 24983177,
+               "score" : 2
+               },
+               {
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/3714585\/user3714585",
+               "profile_image" : "http:\/\/graph.facebook.com\/1133605687\/picture?type=large",
+               "user_id" : 3714585,
+               "display_name" : "user3714585",
+               "reputation" : 17,
+               "user_type" : "registered"
+               },
+               "is_answered" : false,
+               "score" : -1,
+               "answer_count" : 0,
+               "creation_date" : 1406736616,
+               "title" : "About Xcode Optional Argument",
+               "last_activity_date" : 1406736616,
+               "link" : "http:\/\/stackoverflow.com\/questions\/25041754\/about-xcode-optional-argument",
+               "question_id" : 25041754,
+               "view_count" : 12,
+               "tags" : [
+                         "swift",
+                         "swift-playground",
+                         "xcode6-beta4"
+                         ]
+               },
+               {
+               "answer_count" : 2,
+               "last_edit_date" : 1406735093,
+               "bounty_amount" : 50,
+               "owner" : {
+               "accept_rate" : 92,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/2446155\/santa-claus",
+               "user_id" : 2446155,
+               "display_name" : "Santa Claus",
+               "reputation" : 2927,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/bf3bc26e513b78cfa6793b164feee21b?s=128&d=identicon&r=PG&f=1"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/24997536\/runtime-error-when-using-corefoundation-objects-in-a-swift-nsobject-subclass",
+               "tags" : [
+                         "ios",
+                         "arrays",
+                         "swift",
+                         "nsobject"
+                         ],
+               "view_count" : 59,
+               "creation_date" : 1406557791,
+               "is_answered" : true,
+               "title" : "Runtime error when using CoreFoundation objects in a swift NSObject subclass",
+               "bounty_closes_date" : 1407335542,
+               "last_activity_date" : 1406735093,
+               "question_id" : 24997536,
+               "score" : 2
+               },
+               {
+               "owner" : {
+               "accept_rate" : 73,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/3361588\/bas",
+               "user_id" : 3361588,
+               "display_name" : "Bas",
+               "reputation" : 512,
+               "profile_image" : "http:\/\/i.stack.imgur.com\/8RMOl.jpg?s=128&g=1"
+               },
+               "is_answered" : false,
+               "score" : 0,
+               "answer_count" : 1,
+               "creation_date" : 1406723154,
+               "title" : "Swift: Using core data with tabbed based application error: &#39;Cannot create an NSPersistentStoreCoordinator with a nil model&#39;",
+               "last_activity_date" : 1406734370,
+               "link" : "http:\/\/stackoverflow.com\/questions\/25036802\/swift-using-core-data-with-tabbed-based-application-error-cannot-create-an-ns",
+               "question_id" : 25036802,
+               "view_count" : 20,
+               "tags" : [
+                         "core-data",
+                         "swift"
+                         ]
+               },
+               {
+               "answer_count" : 1,
+               "owner" : {
+               "accept_rate" : 68,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/356105\/avalon",
+               "user_id" : 356105,
+               "display_name" : "Avalon",
+               "reputation" : 527,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/7c411478d988aeab3111d2c20ac58880?s=128&d=identicon&r=PG"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/25040700\/swift-create-mutable-array-with-empty-fields",
+               "tags" : [
+                         "ios",
+                         "arrays",
+                         "cocoa-touch",
+                         "generics",
+                         "swift"
+                         ],
+               "view_count" : 30,
+               "creation_date" : 1406733723,
+               "is_answered" : true,
+               "title" : "Swift: Create mutable array with empty fields",
+               "accepted_answer_id" : 25040919,
+               "last_activity_date" : 1406734344,
+               "question_id" : 25040700,
+               "score" : 1
+               },
+               {
+               "closed_reason" : "duplicate",
+               "answer_count" : 0,
+               "last_edit_date" : 1406733740,
+               "owner" : {
+               "accept_rate" : 68,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/356105\/avalon",
+               "user_id" : 356105,
+               "display_name" : "Avalon",
+               "reputation" : 527,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/7c411478d988aeab3111d2c20ac58880?s=128&d=identicon&r=PG"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/25040174\/swift-getting-immutable-error-with-mutable-array",
+               "tags" : [
+                         "ios",
+                         "arrays",
+                         "swift"
+                         ],
+               "view_count" : 35,
+               "creation_date" : 1406732339,
+               "is_answered" : false,
+               "title" : "Swift: Getting immutable error with mutable Array",
+               "last_activity_date" : 1406733740,
+               "question_id" : 25040174,
+               "score" : 2,
+               "closed_date" : 1406732794
+               },
+               {
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/2786862\/siruswhite",
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/23f6925ce75bbd564b6d728c6c865f3e?s=128&d=identicon&r=PG&f=1",
+               "user_id" : 2786862,
+               "display_name" : "SirusWhite",
+               "reputation" : 12,
+               "user_type" : "registered"
+               },
+               "is_answered" : false,
+               "score" : 1,
+               "answer_count" : 1,
+               "creation_date" : 1406674571,
+               "title" : "Button Action to Controller and Back Swift",
+               "last_activity_date" : 1406732607,
+               "link" : "http:\/\/stackoverflow.com\/questions\/25026282\/button-action-to-controller-and-back-swift",
+               "question_id" : 25026282,
+               "view_count" : 18,
+               "tags" : [
+                         "button",
+                         "controller",
+                         "navigation",
+                         "swift",
+                         "back"
+                         ]
+               },
+               {
+               "answer_count" : 1,
+               "last_edit_date" : 1406732334,
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/3858517\/nick-podratz",
+               "profile_image" : "http:\/\/graph.facebook.com\/100004530932816\/picture?type=large",
+               "user_id" : 3858517,
+               "display_name" : "Nick Podratz",
+               "reputation" : 8,
+               "user_type" : "registered"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/25040052\/how-to-add-non-movable-uitableviewcells",
+               "tags" : [
+                         "ios",
+                         "uitableview",
+                         "swift"
+                         ],
+               "view_count" : 19,
+               "creation_date" : 1406732039,
+               "is_answered" : false,
+               "title" : "How to add non-movable UITableViewCells",
+               "last_activity_date" : 1406732334,
+               "question_id" : 25040052,
+               "score" : 0
+               },
+               {
+               "answer_count" : 2,
+               "owner" : {
+               "accept_rate" : 44,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/1191551\/chet",
+               "user_id" : 1191551,
+               "display_name" : "Chet",
+               "reputation" : 601,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/97ced8a229689b73b098a542636052e8?s=128&d=identicon&r=PG"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/25026952\/string-is-not-convertible-from-dictionarystring-anyobject-error-in-swift",
+               "tags" : [
+                         "swift"
+                         ],
+               "view_count" : 36,
+               "creation_date" : 1406679569,
+               "is_answered" : true,
+               "title" : "String is not convertible from Dictionary&lt;String,AnyObject&gt; Error in Swift",
+               "accepted_answer_id" : 25027759,
+               "last_activity_date" : 1406732216,
+               "question_id" : 25026952,
+               "score" : 1
+               },
+               {
+               "owner" : {
+               "accept_rate" : 82,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/974407\/johnston",
+               "user_id" : 974407,
+               "display_name" : "Johnston",
+               "reputation" : 1097,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/19c57d25aa8932f3c41257ab756b69eb?s=128&d=identicon&r=PG"
+               },
+               "is_answered" : false,
+               "score" : 0,
+               "answer_count" : 0,
+               "creation_date" : 1406729586,
+               "title" : "CoreBluetooth didDiscoverPeripheral not being called in Swift",
+               "last_activity_date" : 1406729586,
+               "link" : "http:\/\/stackoverflow.com\/questions\/25039103\/corebluetooth-diddiscoverperipheral-not-being-called-in-swift",
+               "question_id" : 25039103,
+               "view_count" : 13,
+               "tags" : [
+                         "ios",
+                         "bluetooth",
+                         "swift",
+                         "core-bluetooth"
+                         ]
+               },
+               {
+               "owner" : {
+               "accept_rate" : 57,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/1823351\/iifreeman",
+               "user_id" : 1823351,
+               "display_name" : "iiFreeman",
+               "reputation" : 1425,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/643ba8213d82aeb213cf4a4a5e3f4535?s=128&d=identicon&r=PG"
+               },
+               "is_answered" : false,
+               "score" : -1,
+               "answer_count" : 0,
+               "creation_date" : 1406727871,
+               "title" : "Swift Segmentation fault while use protocol.type",
+               "last_activity_date" : 1406727871,
+               "link" : "http:\/\/stackoverflow.com\/questions\/25038493\/swift-segmentation-fault-while-use-protocol-type",
+               "question_id" : 25038493,
+               "view_count" : 16,
+               "tags" : [
+                         "enums",
+                         "swift",
+                         "protocols",
+                         "ios8",
+                         "xcode6-beta4"
+                         ]
+               },
+               {
+               "answer_count" : 0,
+               "last_edit_date" : 1406725507,
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/2939175\/mate-hegedus",
+               "profile_image" : "http:\/\/graph.facebook.com\/100002492231539\/picture?type=large",
+               "user_id" : 2939175,
+               "display_name" : "Mate Hegedus",
+               "reputation" : 1,
+               "user_type" : "registered"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/25034497\/playing-a-video-file-from-a-server-in-swift",
+               "tags" : [
+                         "ios",
+                         "swift",
+                         "playback",
+                         "movie"
+                         ],
+               "view_count" : 33,
+               "creation_date" : 1406716097,
+               "is_answered" : false,
+               "title" : "Playing a video file from a server in Swift",
+               "last_activity_date" : 1406725507,
+               "question_id" : 25034497,
+               "score" : -1
+               },
+               {
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/3891376\/user3891376",
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/5b7f1f0453db5a5ed503f4119c90351d?s=128&d=identicon&r=PG&f=1",
+               "user_id" : 3891376,
+               "display_name" : "user3891376",
+               "reputation" : 1,
+               "user_type" : "registered"
+               },
+               "is_answered" : false,
+               "score" : 0,
+               "answer_count" : 0,
+               "creation_date" : 1406724208,
+               "title" : "Xcode6 - ibtool failed with exit code 255",
+               "last_activity_date" : 1406724208,
+               "link" : "http:\/\/stackoverflow.com\/questions\/25037174\/xcode6-ibtool-failed-with-exit-code-255",
+               "question_id" : 25037174,
+               "view_count" : 17,
+               "tags" : [
+                         "ios",
+                         "xcode",
+                         "storyboard",
+                         "swift",
+                         "xcode6-beta4"
+                         ]
+               },
+               {
+               "answer_count" : 0,
+               "last_edit_date" : 1406723696,
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/2163915\/user2163915",
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/6e84c86cfe52bef28aac47e8c5003176?s=128&d=identicon&r=PG",
+               "user_id" : 2163915,
+               "display_name" : "user2163915",
+               "reputation" : 1,
+               "user_type" : "registered"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/25036619\/scrollviewwillenddragging-targetcontentoffset-memory-not-changed-in-xcode-6-beta",
+               "tags" : [
+                         "ios",
+                         "swift",
+                         "xcode6",
+                         "uiscrollviewdelegate",
+                         "xcode6-beta4"
+                         ],
+               "view_count" : 19,
+               "creation_date" : 1406722620,
+               "is_answered" : false,
+               "title" : "scrollViewWillEndDragging targetContentOffset.memory not changed in Xcode 6 beta 4",
+               "last_activity_date" : 1406723696,
+               "question_id" : 25036619,
+               "score" : 0
+               },
+               {
+               "closed_reason" : "unclear what you&#39;re asking",
+               "answer_count" : 0,
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/3891197\/fred",
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/198ec877535b535295ad90dd75259131?s=128&d=identicon&r=PG&f=1",
+               "user_id" : 3891197,
+               "display_name" : "fred",
+               "reputation" : 1,
+               "user_type" : "registered"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/25036543\/uialertview-does-not-work-on-keyboardviewcontroller-uiinputviewcontroller",
+               "tags" : [
+                         "xcode",
+                         "swift",
+                         "uialertview"
+                         ],
+               "view_count" : 11,
+               "creation_date" : 1406722383,
+               "is_answered" : false,
+               "title" : "UIAlertView does not work on KeyboardViewController: UIInputViewController",
+               "last_activity_date" : 1406722383,
+               "question_id" : 25036543,
+               "score" : -1,
+               "closed_date" : 1406725826
+               },
+               {
+               "owner" : {
+               "accept_rate" : 75,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/454049\/luckyluke",
+               "user_id" : 454049,
+               "display_name" : "LuckyLuke",
+               "reputation" : 7690,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/90d79935ce8f6d048b46683ce6cc9cdf?s=128&d=identicon&r=PG"
+               },
+               "is_answered" : false,
+               "score" : 0,
+               "answer_count" : 0,
+               "creation_date" : 1406720686,
+               "title" : "What does bound values between 0.0 and 1.0 mean?",
+               "last_activity_date" : 1406720686,
+               "link" : "http:\/\/stackoverflow.com\/questions\/25035992\/what-does-bound-values-between-0-0-and-1-0-mean",
+               "question_id" : 25035992,
+               "view_count" : 51,
+               "tags" : [
+                         "ios",
+                         "objective-c",
+                         "xcode",
+                         "swift"
+                         ]
+               },
+               {
+               "owner" : {
+               "accept_rate" : 81,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/778396\/alex",
+               "user_id" : 778396,
+               "display_name" : "Alex",
+               "reputation" : 776,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/3d75387bd3c4308947d03545e8219c77?s=128&d=identicon&r=PG"
+               },
+               "is_answered" : false,
+               "score" : -1,
+               "answer_count" : 1,
+               "creation_date" : 1406720143,
+               "title" : "Simple game engine for simple 2D game",
+               "last_activity_date" : 1406720476,
+               "link" : "http:\/\/stackoverflow.com\/questions\/25035818\/simple-game-engine-for-simple-2d-game",
+               "question_id" : 25035818,
+               "view_count" : 28,
+               "tags" : [
+                         "ios",
+                         "osx",
+                         "swift",
+                         "game-engine",
+                         "2d-games"
+                         ]
+               },
+               {
+               "answer_count" : 0,
+               "last_edit_date" : 1406720370,
+               "owner" : {
+               "accept_rate" : 86,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/1809329\/david",
+               "user_id" : 1809329,
+               "display_name" : "David",
+               "reputation" : 101,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/141d927baf2c22afa6844b8937936459?s=128&d=identicon&r=PG"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/25032147\/how-to-change-uialertcontroller-size-in-swift",
+               "tags" : [
+                         "ios",
+                         "swift",
+                         "height",
+                         "uialertcontroller"
+                         ],
+               "view_count" : 23,
+               "creation_date" : 1406709176,
+               "is_answered" : false,
+               "title" : "How to change UIAlertController size in SWIFT?",
+               "last_activity_date" : 1406720370,
+               "question_id" : 25032147,
+               "score" : 0
+               },
+               {
+               "closed_reason" : "duplicate",
+               "answer_count" : 2,
+               "owner" : {
+               "accept_rate" : 76,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/1743536\/golddove",
+               "user_id" : 1743536,
+               "display_name" : "golddove",
+               "reputation" : 376,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/0bc00070ec2ee1b0253792d170a590b8?s=128&d=identicon&r=PG"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/24926418\/swift-array-cannot-be-downcast-to-array-of-derived",
+               "tags" : [
+                         "core-data",
+                         "swift",
+                         "xcode6"
+                         ],
+               "view_count" : 55,
+               "creation_date" : 1406182780,
+               "is_answered" : true,
+               "title" : "Swift array cannot be downcast to array of derived",
+               "last_activity_date" : 1406718663,
+               "question_id" : 24926418,
+               "score" : 0,
+               "closed_date" : 1406186358
+               },
+               {
+               "answer_count" : 1,
+               "last_edit_date" : 1406716066,
+               "owner" : {
+               "accept_rate" : 100,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/3801097\/alvin-varghese",
+               "user_id" : 3801097,
+               "display_name" : "Alvin Varghese",
+               "reputation" : 16,
+               "profile_image" : "http:\/\/i.stack.imgur.com\/mp9sw.jpg?s=128&g=1"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/25031259\/custom-protocol-is-not-working-in-swift",
+               "tags" : [
+                         "ios",
+                         "uiviewcontroller",
+                         "swift",
+                         "protocols"
+                         ],
+               "view_count" : 55,
+               "creation_date" : 1406706027,
+               "is_answered" : true,
+               "title" : "Custom protocol is not working in swift",
+               "accepted_answer_id" : 25032196,
+               "last_activity_date" : 1406718055,
+               "question_id" : 25031259,
+               "score" : 1
+               },
+               {
+               "answer_count" : 2,
+               "last_edit_date" : 1402427265,
+               "owner" : {
+               "accept_rate" : 77,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/711111\/kennyvb",
+               "user_id" : 711111,
+               "display_name" : "KennyVB",
+               "reputation" : 133,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/3a77eb024a4a390037f6a613e5784ae0?s=128&d=identicon&r=PG"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/24148401\/switch-statement-gone-wrong-swift-language",
+               "tags" : [
+                         "switch-statement",
+                         "swift"
+                         ],
+               "view_count" : 544,
+               "creation_date" : 1402425081,
+               "is_answered" : true,
+               "title" : "switch statement gone wrong - swift language",
+               "accepted_answer_id" : 24150108,
+               "last_activity_date" : 1406717782,
+               "question_id" : 24148401,
+               "score" : 0
+               },
+               {
+               "owner" : {
+               "link" : "http:\/\/stackoverflow.com\/users\/3781019\/user3781019",
+               "profile_image" : "http:\/\/graph.facebook.com\/1190901489\/picture?type=large",
+               "user_id" : 3781019,
+               "display_name" : "user3781019",
+               "reputation" : 1,
+               "user_type" : "registered"
+               },
+               "is_answered" : false,
+               "score" : 0,
+               "answer_count" : 0,
+               "creation_date" : 1403819903,
+               "title" : "Swift: Core Data on IOS7 device -&gt; entityForName on second entity is nil",
+               "last_activity_date" : 1406716997,
+               "link" : "http:\/\/stackoverflow.com\/questions\/24440927\/swift-core-data-on-ios7-device-entityforname-on-second-entity-is-nil",
+               "question_id" : 24440927,
+               "view_count" : 131,
+               "tags" : [
+                         "ios",
+                         "iphone",
+                         "core-data",
+                         "ios7",
+                         "swift"
+                         ]
+               },
+               {
+               "answer_count" : 3,
+               "owner" : {
+               "accept_rate" : 60,
+               "user_type" : "registered",
+               "link" : "http:\/\/stackoverflow.com\/users\/2883645\/josmek",
+               "user_id" : 2883645,
+               "display_name" : "josmek",
+               "reputation" : 20,
+               "profile_image" : "https:\/\/www.gravatar.com\/avatar\/cc978d990bfba8048a2dd2f00f0dfd44?s=128&d=identicon&r=PG"
+               },
+               "link" : "http:\/\/stackoverflow.com\/questions\/24942123\/iboutlet-property-has-non-optional-type-uibutton",
+               "tags" : [
+                         "ios",
+                         "xcode",
+                         "swift"
+                         ],
+               "view_count" : 151,
+               "creation_date" : 1406229349,
+               "is_answered" : true,
+               "title" : "&#39;IBOutlet&#39; property has non-optional type &#39;UIButton&#39;",
+               "accepted_answer_id" : 24942643,
+               "last_activity_date" : 1406716763,
+               "question_id" : 24942123,
+               "score" : 0
+               }
+               ],
+    "quota_max" : 300,
+    "quota_remaining" : 7
+}
