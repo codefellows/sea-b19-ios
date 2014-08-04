@@ -7,11 +7,21 @@
 //
 
 import Foundation
+import CoreData
+import UIKit
 
 class NetworkController {
     
     let apiDomain = "http://api.stackexchange.com/2.2"
     let searchEndpoint = "/search?order=desc&sort=activity&site=stackoverflow"
+    var document : UIManagedDocument!
+
+    init() {
+        self.setupManagedDocumentWithCompletion() {
+            (Bool, context: NSManagedObjectContext) in
+            
+        }
+    }
     
     func parseSuccessfulResponse(responseData : NSData) -> [Question]{
         var questions = [Question]()
@@ -20,7 +30,8 @@ class NetworkController {
             if let items = responseDict["items"] as? NSArray {
                 for item in items {
                     if let itemDict = item as? NSDictionary {
-                        let question = Question(itemDict: itemDict)
+                        let entityDescription = NSEntityDescription.entityForName("Question", inManagedObjectContext: self.document!.managedObjectContext)
+                        let question = Question(itemDict: itemDict, entity: entityDescription, insertIntoManagedObjectContext: self.document!.managedObjectContext)
                         questions += question
                     }
                 }
@@ -32,6 +43,10 @@ class NetworkController {
         let sampleData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("SampleResponse", ofType: "json"))
         var questions = self.parseSuccessfulResponse(sampleData)
         callback(questions: questions, errorDescription: nil)
+    }
+    
+    func fetchQuestionsFromCoreData(callback: (questions: [Question]?, errorDescription: String?) -> Void) {
+        
     }
     
     func fetchQuestionsForSearchTerm(searchTerm : String, callback : (questions : [Question]?, errorDescription : String?) -> Void) {
@@ -72,5 +87,39 @@ class NetworkController {
         
             })
         task.resume()
+    }
+    
+    //MARK: Core Data
+
+    func documentFileURL() -> NSURL {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentDirectory = paths[0] as String
+        return NSURL(fileURLWithPath: documentDirectory.stringByAppendingPathComponent("SwiftOverflow.document"))
+    }
+
+    func setupManagedDocumentWithCompletion(completionHandler: ((Bool, context : NSManagedObjectContext) -> Void) ) {
+        self.document = UIManagedDocument(fileURL: self.documentFileURL())
+        self.document.persistentStoreOptions = [NSMigratePersistentStoresAutomaticallyOption : true, NSInferMappingModelAutomaticallyOption : true]
+        
+        if !NSFileManager.defaultManager().fileExistsAtPath(self.documentFileURL().path) {
+            // document does not exist, we need to create it
+            self.document.saveToURL(self.documentFileURL(), forSaveOperation: UIDocumentSaveOperation.ForCreating) {
+                (success) in
+                completionHandler(success, context: self.document.managedObjectContext)
+            }
+        } else {
+            switch self.document.documentState {
+            case UIDocumentState.Closed:
+                // document is close, we need to open it
+                self.document.openWithCompletionHandler() {
+                    (success) in
+                    completionHandler(success, context: self.document.managedObjectContext)
+                }
+            default:
+                // document is open, just return it
+                completionHandler(true, context: self.document.managedObjectContext)
+            }
+            
+        }
     }
 }

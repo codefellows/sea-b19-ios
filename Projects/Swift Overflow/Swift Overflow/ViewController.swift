@@ -7,27 +7,63 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
     let networkController = NetworkController()
-    var questions = Array<NSDictionary>()
     let imageQueue = NSOperationQueue()
+    
+    var questions = Array<NSDictionary>()
+    var document : UIManagedDocument!
+    var context : NSManagedObjectContext?
     
     @IBOutlet var tableView : UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        imageQueue.maxConcurrentOperationCount = 1
+        self.setupManagedDocumentWithCompletion() {
+            (success) in
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
+    func setupManagedDocumentWithCompletion(completionHandler: ((Bool, context : NSManagedObjectContext) -> Void) ) {
+        self.document = UIManagedDocument(fileURL: self.documentFileURL())
+        self.document.persistentStoreOptions = [NSMigratePersistentStoresAutomaticallyOption : true, NSInferMappingModelAutomaticallyOption : true]
+        
+        if !NSFileManager.defaultManager().fileExistsAtPath(self.documentFileURL().path) {
+            // document does not exist, we need to create it
+            self.document.saveToURL(self.documentFileURL(), forSaveOperation: UIDocumentSaveOperation.ForCreating) {
+                (success) in
+                completionHandler(success, context: self.document.managedObjectContext)
+            }
+        } else {
+            switch self.document.documentState {
+            case UIDocumentState.Closed:
+                // document is close, we need to open it
+                self.document.openWithCompletionHandler() {
+                    (success) in
+                    completionHandler(success, context: self.document.managedObjectContext)
+                }
+            default:
+                // document is open, just return it
+                completionHandler(true, context: self.document.managedObjectContext)
+            }
+            
+        }
+    }
+    
+    func documentFileURL() -> NSURL {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentDirectory = paths[0] as String
+        return NSURL(fileURLWithPath: documentDirectory.stringByAppendingPathComponent("SwiftOverflow.document"))
+    }
     //MARK: UITableViewDataSource
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
@@ -83,8 +119,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func searchBarSearchButtonClicked(searchBar: UISearchBar!) {
         let searchTerm = searchBar.text
         searchBar.resignFirstResponder()
-        questions = networkController.searchResultsForQueryString(searchTerm)
-        tableView?.reloadData()
+        let rawQuestions = networkController.searchResultsForQueryString(searchTerm)
+        for rawQuestion in rawQuestions {
+            if let entityDescription = NSEntityDescription.entityForName("Question", inManagedObjectContext: self.context) {
+                let question = Question(entity: entityDescription, insertIntoManagedObjectContext: self.context)
+                question.answer_count = rawQuestion["answer_count"] as NSNumber
+                question.creation_date = rawQuestion["creation_date"] as NSDate
+                question.is_answered = rawQuestion["is_answered"] as NSNumber
+                question.link = rawQuestion["link"] as String
+                question.title = rawQuestion["title"] as String
+                
+                var err : NSError?
+                self.context?.save(&err)
+                if !err {
+                    tableView?.reloadData()
+                }
+            }
+        }
     }
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar!) {

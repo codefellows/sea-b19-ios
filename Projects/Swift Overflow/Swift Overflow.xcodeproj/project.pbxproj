@@ -15,6 +15,9 @@
 		EF182A031986C4770067A796 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF182A021986C4770067A796 /* NetworkController.swift */; };
 		EF5523E9198AB467009C9FA5 /* SwiftOverflow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF5523E7198AB467009C9FA5 /* SwiftOverflow.xcdatamodeld */; };
 		EF5523EA198AB467009C9FA5 /* SwiftOverflow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF5523E7198AB467009C9FA5 /* SwiftOverflow.xcdatamodeld */; };
+		EF64A7D8198C104D009EC681 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64A7D7198C104D009EC681 /* Question.swift */; };
+		EF64A7DA198C104E009EC681 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64A7D9198C104E009EC681 /* Tag.swift */; };
+		EF64A7DC198C104E009EC681 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64A7DB198C104E009EC681 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,10 @@
 		EF1829F81986C37F0067A796 /* Swift_OverflowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_OverflowTests.swift; sourceTree = "<group>"; };
 		EF182A021986C4770067A796 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		EF5523E8198AB467009C9FA5 /* SwiftOverflow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftOverflow.xcdatamodel; sourceTree = "<group>"; };
+		EF64A7D6198C104D009EC681 /* Swift Overflow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift Overflow-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF64A7D7198C104D009EC681 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		EF64A7D9198C104E009EC681 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		EF64A7DB198C104E009EC681 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +94,10 @@
 				EF1829E31986C37F0067A796 /* Supporting Files */,
 				EF182A021986C4770067A796 /* NetworkController.swift */,
 				EF5523E7198AB467009C9FA5 /* SwiftOverflow.xcdatamodeld */,
+				EF64A7DB198C104E009EC681 /* User.swift */,
+				EF64A7D9198C104E009EC681 /* Tag.swift */,
+				EF64A7D7198C104D009EC681 /* Question.swift */,
+				EF64A7D6198C104D009EC681 /* Swift Overflow-Bridging-Header.h */,
 			);
 			path = "Swift Overflow";
 			sourceTree = "<group>";
@@ -215,10 +226,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF64A7DA198C104E009EC681 /* Tag.swift in Sources */,
+				EF64A7D8198C104D009EC681 /* Question.swift in Sources */,
 				EF1829E81986C37F0067A796 /* ViewController.swift in Sources */,
 				EF1829E61986C37F0067A796 /* AppDelegate.swift in Sources */,
 				EF182A031986C4770067A796 /* NetworkController.swift in Sources */,
 				EF5523E9198AB467009C9FA5 /* SwiftOverflow.xcdatamodeld in Sources */,
+				EF64A7DC198C104E009EC681 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,9 +351,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift Overflow/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift Overflow/Swift Overflow-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -348,9 +365,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift Overflow/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift Overflow/Swift Overflow-Bridging-Header.h";
 			};
 			name = Release;
 		};
