@@ -1,124 +1,189 @@
 //
 //  ViewController.swift
-//  Week3FIlterApp
+//  Week3App
 //
-//  Created by Bradley Johnson on 8/4/14.
+//  Created by Bradley Johnson on 8/3/14.
 //  Copyright (c) 2014 learnswift. All rights reserved.
 //
 
 import UIKit
 import Photos
 
-class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate,PhotoSelectedDelegate {
+class ViewController: UIViewController, SelectedPhotoDelegate, PHPhotoLibraryChangeObserver {
     
-    @IBOutlet weak var photoButton: UIButton!
+    var collectionsFetchResults = [PHFetchResult]()
+    var collectionsLocalizedTitles = [String]()
     
-    let photoPicker = UIImagePickerController()
-    let cameraPicker = UIImagePickerController()
-    var imageViewSize : CGSize!
-    let alertView = UIAlertController(title: "Alert!", message: "stop", preferredStyle: UIAlertControllerStyle.Alert)
-       var actionController = UIAlertController(title: "", message: "", preferredStyle: UIAlertControllerStyle.ActionSheet)
+    var selectedAsset : PHAsset?
+    
+    let adjustmentFormatterIndentifier = "com.filterappdemo.cf"
+    
+    var context = CIContext(options: nil)
+                            
+
     
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupActionController()
+        PHPhotoLibrary.sharedPhotoLibrary().registerChangeObserver(self)
         
-        self.photoPicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        self.photoPicker.allowsEditing = true
-        self.photoPicker.delegate = self
+//        var smartAlbums = PHAssetCollection.fetchAssetCollectionsWithType(PHAssetCollectionType.SmartAlbum, subtype: PHAssetCollectionSubtype.AlbumRegular, options: nil)
+//        var topLevelUserCollections = PHCollectionList.fetchTopLevelUserCollectionsWithOptions(nil)
+//        self.collectionsFetchResults = [smartAlbums,topLevelUserCollections]
+//        self.collectionsLocalizedTitles = ["Smart Albums", "Albums"]
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        self.imageViewSize = self.imageView.frame.size
-    }
+//    
+//    func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+//        
+//        return 1 + self.collectionsFetchResults.count
+//    }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+//        
+//        if segue.identifier == "Photo" {
+//            var gridVC = segue.destinationViewController as GridViewController
+//            gridVC.assetsFetchResults = PHAsset.fetchAssetsWithOptions(nil)
+//            
+//        }
+//    }
+    
+    //MARK: UICollectionViewDataSource
+    
+//    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int  {
+//        
+//        if section == 0 {
+//            return 1
+//        }
+//        else {
+//            var fetchResult = self.collectionsFetchResults[section - 1] as PHFetchResult
+//            var numberOfRows = fetchResult.count
+//            return numberOfRows
+//        }
+//    }
+//    
+//    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!  {
+//        
+//        let cell = tableView.dequeueReusableCellWithIdentifier("AlbumsCell", forIndexPath: indexPath) as UITableViewCell
+//        if indexPath.section == 0 {
+//            cell.textLabel.text = "All Photos"
+//        }
+//        else {
+//            var fetchResult = self.collectionsFetchResults[indexPath.section - 1]
+//            var collection = fetchResult[indexPath.row] as PHCollection
+//            cell.textLabel.text = collection.localizedTitle
+//        }
+//        return cell
+//    }
+//    
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
         if segue.identifier == "ShowGrid" {
-            
             let gridVC = segue.destinationViewController as GridViewController
-            //fetching all assets without any options - gives us all the users photos
-            gridVC.assetsFetchResult = PHAsset.fetchAssetsWithOptions(nil)
+            gridVC.assetsFetchResults = PHAsset.fetchAssetsWithOptions(nil)
             gridVC.delegate = self
         }
     }
     
-    func setupActionController() {
-        
-        self.actionController = UIAlertController(title: "Title", message: "message", preferredStyle: UIAlertControllerStyle.ActionSheet)
-        
-        if self.actionController.popoverPresentationController {
-            //self.actionController.modalPresentationStyle = UIModalPresentationStyle.Popover
-            self.actionController.popoverPresentationController.sourceView = self.photoButton
-        }
-        self.actionController.modalPresentationStyle = UIModalPresentationStyle.PageSheet
-        let cameraAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: {( action: UIAlertAction!) -> Void in
-            //present the camera picker
-            //self.presentViewController(self.actionController, animated: true, completion: nil)
-            
-            })
-        let photoAction = UIAlertAction(title: "Photo Library", style: UIAlertActionStyle.Default, handler: {(action : UIAlertAction!) -> Void in
-            //present the photo library
-            self.performSegueWithIdentifier("ShowGrid", sender: self)
-                      })
-        self.actionController.addAction(cameraAction)
-        self.actionController.addAction(photoAction)
-
-        
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    @IBAction func handlePhotoButtonPressed(sender: AnyObject) {
-        
-        self.presentViewController(self.actionController, animated: true, completion: nil)
-    }
-    
-    //MARK: UIImagePickerControllerDelegate
-    
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]!) {
-        
-        var editedImage = info[UIImagePickerControllerEditedImage] as UIImage
-        
-//        //creating graphics context
-//         UIGraphicsBeginImageContextWithOptions(self.imageViewSize, true, UIScreen.mainScreen().scale)
-//        let context = UIGraphicsGetCurrentContext()
-//        CGContextTranslateCTM(context, 0.0, self.imageViewSize.height)
-//        CGContextScaleCTM(context, 1.0, -1.0)
-//        //drawing image in context
-//        CGContextDrawImage(context, CGRect(x: 0, y: 0, width: self.imageViewSize.width, height: self.imageViewSize.height), editedImage.CGImage)
-//        //getting output image from context
-//        var outputImage = UIGraphicsGetImageFromCurrentImageContext()
-//        UIGraphicsEndImageContext()
-//        println("Edited Image Size: \(editedImage.size)")
-//        
-//        var outputImage = UIImage(CGImage: editedImage.CGImage, scale: 0.5, orientation: editedImage.imageOrientation)
-//        
-//        println("Output Image Size: \(outputImage.size)")
-
-        self.imageView.image = editedImage
-        self.dismissViewControllerAnimated(true, completion: nil)
-        editedImage.CIImage
-    }
-    
-    func imagePickerControllerDidCancel(picker: UIImagePickerController!) {
-        println("user canceled")
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    //MARK: PhotoSelectedDelegate
     func photoSelected(asset : PHAsset) -> Void {
-        println("final step")
         
-        var targetSize = CGSize(width: CGRectGetWidth(self.imageView.frame), height: CGRectGetHeight(self.imageView.frame))
-        PHImageManager.defaultManager().requestImageForAsset(asset, targetSize: targetSize, contentMode: PHImageContentMode.AspectFill, options: nil) { (image, info) -> Void in
+        self.selectedAsset = asset
+        self.updateImage()
+        
+//        var targetSize = CGSize(width: CGRectGetWidth(self.imageView.bounds), height: CGRectGetHeight(self.imageView.bounds))
+//        
+//        PHImageManager.defaultManager().requestImageForAsset(asset, targetSize: targetSize, contentMode: PHImageContentMode.AspectFit, options: nil, resultHandler: {(result : UIImage!, [NSObject : AnyObject]!) -> Void in
+//            
+//            if result {
+//                self.imageView.image = result
+//            }
+//            
+//            })
+
+        
+        
+        
+    }
+    
+    @IBAction func handleSepiaPressed(sender: AnyObject) {
+        
+        var options = PHContentEditingInputRequestOptions()
+        options.canHandleAdjustmentData = {(data : PHAdjustmentData!) -> Bool in
             
-            self.imageView.image = image
+            return data.formatIdentifier == self.adjustmentFormatterIndentifier && data.formatVersion == "1.0"
+        }
+        
+        self.selectedAsset!.requestContentEditingInputWithOptions(options, completionHandler: { ( contentEditingInput : PHContentEditingInput!, info : [NSObject : AnyObject]!) -> Void in
+            
+            //grabbing the image and converting it to CIImage
+            var url = contentEditingInput.fullSizeImageURL
+            var orientation = contentEditingInput.fullSizeImageOrientation
+            var inputImage = CIImage(contentsOfURL: url)
+            inputImage = inputImage.imageByApplyingOrientation(orientation)
+            
+            //creating the filter
+            var filterName = "CISepiaTone"
+            var filter = CIFilter(name: filterName)
+            filter.setDefaults()
+            filter.setValue(inputImage, forKey: kCIInputImageKey)
+            var outputImage = filter.outputImage
+            
+            var cgimg = self.context.createCGImage(outputImage, fromRect: outputImage.extent())
+            var finalImage = UIImage(CGImage: cgimg)
+            var jpegData = UIImageJPEGRepresentation(finalImage, 1.0)
+            
+            //create our adjustmentdata
+            var adjustmentData = PHAdjustmentData(formatIdentifier: self.adjustmentFormatterIndentifier, formatVersion: "1.0", data: jpegData)
+            var contentEditingOutput = PHContentEditingOutput(contentEditingInput:contentEditingInput)
+            jpegData.writeToURL(contentEditingOutput.renderedContentURL, atomically: true)
+            contentEditingOutput.adjustmentData = adjustmentData
+            
+            //requesting the change
+            PHPhotoLibrary.sharedPhotoLibrary().performChanges({
+                //change block
+                var request = PHAssetChangeRequest(forAsset: self.selectedAsset)
+                request.contentEditingOutput = contentEditingOutput
+
+                }, completionHandler: { (success : Bool,error : NSError!) -> Void in
+                    //completionHandler for the change
+                    if !success {
+                        println(error.localizedDescription)
+                    }
+                
+            })
+            
+            
+        })
+    }
+    
+    func updateImage() {
+        
+        var targetSize = self.imageView.frame.size
+        PHImageManager.defaultManager().requestImageForAsset(self.selectedAsset, targetSize: targetSize, contentMode: PHImageContentMode.AspectFill, options: nil) { (result : UIImage!, info : [NSObject : AnyObject]!) -> Void in
+            self.imageView.image = result
+        }
+        
+    }
+    
+    func photoLibraryDidChange(changeInstance: PHChange!) {
+        
+        NSOperationQueue.mainQueue().addOperationWithBlock { () -> Void in
+            
+            if self.selectedAsset != nil {
+                var changeDetails = changeInstance.changeDetailsForObject(self.selectedAsset)
+                if changeDetails != nil {
+                    self.selectedAsset = changeDetails.objectAfterChanges as? PHAsset
+                    
+                    if changeDetails.assetContentChanged {
+                        
+                        self.updateImage()
+                    
+                    }
+                    
+                }
+            }
         }
     }
-
 }
 
