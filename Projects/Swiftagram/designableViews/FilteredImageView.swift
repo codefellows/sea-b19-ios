@@ -1,0 +1,27 @@
+//
+//  FilteredImageView.swift
+//  Swiftagram
+//
+//  Created by John Clem on 8/6/14.
+//  Copyright (c) 2014 Learn Swift. All rights reserved.
+//
+
+import UIKit
+
+@IBDesignable class FilteredImageView: UIImageView {
+
+    var sepiaFilter = CIFilter(name: "CISepiaTone")
+    
+    @IBInspectable var sepiaIntensity : CGFloat = 1.0 {
+        didSet {
+            sepiaFilter.setValue(self.coreImageBackedImage(), forKey: kCIInputImageKey)
+            sepiaFilter.setValue(sepiaIntensity, forKey: kCIInputIntensityKey)
+            self.image = UIImage(CIImage: sepiaFilter.outputImage)
+        }
+    }
+    
+    func coreImageBackedImage() -> CIImage {
+        let ciImage = CIImage(CGImage: self.image.CGImage)
+        return ciImage
+    }
+}

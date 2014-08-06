@@ -17,6 +17,7 @@
 		EF0D2A01197D8766001C9452 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF0D2A00197D8766001C9452 /* Images.xcassets */; };
 		EF0D2A0D197D8766001C9452 /* ClassRosterB19Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0D2A0C197D8766001C9452 /* ClassRosterB19Tests.swift */; };
 		EF0D2A1A197D89C0001C9452 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0D2A19197D89C0001C9452 /* PersonTests.swift */; };
+		EF4B164E19906F1E008FB167 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DD96D1197F06A00061FC75 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -260,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4B164E19906F1E008FB167 /* Person.swift in Sources */,
 				EF0D2A1A197D89C0001C9452 /* PersonTests.swift in Sources */,
 				EF0D2A0D197D8766001C9452 /* ClassRosterB19Tests.swift in Sources */,
 			);

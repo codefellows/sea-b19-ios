@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>ClassRoster</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.dt.playground.ClassRoster-1337-44</string>
+	<string>io.learnswift.classRoster</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF5662381991794100BB4E0B /* PhotosCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5662371991794100BB4E0B /* PhotosCollectionHeaderView.swift */; };
+		EF737C191992B12A00AE6A25 /* designableViews.h in Headers */ = {isa = PBXBuildFile; fileRef = EF737C181992B12A00AE6A25 /* designableViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF737C281992B12A00AE6A25 /* designableViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF737C141992B12A00AE6A25 /* designableViews.framework */; };
+		EF737C291992B12A00AE6A25 /* designableViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF737C141992B12A00AE6A25 /* designableViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF737C351992B15100AE6A25 /* FilteredImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF737C331992B15100AE6A25 /* FilteredImageView.swift */; };
+		EF737C3A1992B38C00AE6A25 /* Bryce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF737C361992B38C00AE6A25 /* Bryce.jpg */; };
+		EF737C3B1992B38C00AE6A25 /* Bryce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF737C361992B38C00AE6A25 /* Bryce.jpg */; };
+		EF737C3C1992B38C00AE6A25 /* Copenhagen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF737C371992B38C00AE6A25 /* Copenhagen.jpg */; };
+		EF737C3D1992B38C00AE6A25 /* Copenhagen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF737C371992B38C00AE6A25 /* Copenhagen.jpg */; };
+		EF737C3E1992B38C00AE6A25 /* Flowers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF737C381992B38C00AE6A25 /* Flowers.jpg */; };
+		EF737C3F1992B38C00AE6A25 /* Flowers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF737C381992B38C00AE6A25 /* Flowers.jpg */; };
+		EF737C401992B38C00AE6A25 /* Wolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF737C391992B38C00AE6A25 /* Wolf.jpg */; };
+		EF737C411992B38C00AE6A25 /* Wolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF737C391992B38C00AE6A25 /* Wolf.jpg */; };
+		EF78CCB1199151A50042048F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78CCB0199151A50042048F /* AppDelegate.swift */; };
+		EF78CCB4199151A50042048F /* Swiftagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF78CCB2199151A50042048F /* Swiftagram.xcdatamodeld */; };
+		EF78CCB6199151A50042048F /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78CCB5199151A50042048F /* PhotosViewController.swift */; };
+		EF78CCB9199151A50042048F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF78CCB7199151A50042048F /* Main.storyboard */; };
+		EF78CCBB199151A50042048F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF78CCBA199151A50042048F /* Images.xcassets */; };
+		EF78CCC7199151A50042048F /* SwiftagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78CCC6199151A50042048F /* SwiftagramTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF737C261992B12A00AE6A25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF78CCA3199151A40042048F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF737C131992B12A00AE6A25;
+			remoteInfo = designableViews;
+		};
+		EF737C2A1992B12A00AE6A25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF78CCA3199151A40042048F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF737C131992B12A00AE6A25;
+			remoteInfo = designableViews;
+		};
+		EF78CCC1199151A50042048F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF78CCA3199151A40042048F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF78CCAA199151A50042048F;
+			remoteInfo = Swiftagram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF737C311992B12A00AE6A25 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF737C291992B12A00AE6A25 /* designableViews.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EF5662371991794100BB4E0B /* PhotosCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionHeaderView.swift; sourceTree = "<group>"; };
+		EF737C141992B12A00AE6A25 /* designableViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = designableViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF737C171992B12A00AE6A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF737C181992B12A00AE6A25 /* designableViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = designableViews.h; sourceTree = "<group>"; };
+		EF737C331992B15100AE6A25 /* FilteredImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredImageView.swift; sourceTree = "<group>"; };
+		EF737C361992B38C00AE6A25 /* Bryce.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bryce.jpg; sourceTree = "<group>"; };
+		EF737C371992B38C00AE6A25 /* Copenhagen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Copenhagen.jpg; sourceTree = "<group>"; };
+		EF737C381992B38C00AE6A25 /* Flowers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Flowers.jpg; sourceTree = "<group>"; };
+		EF737C391992B38C00AE6A25 /* Wolf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wolf.jpg; sourceTree = "<group>"; };
+		EF78CCAB199151A50042048F /* Swiftagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF78CCAF199151A50042048F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF78CCB0199151A50042048F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF78CCB3199151A50042048F /* Swiftagram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swiftagram.xcdatamodel; sourceTree = "<group>"; };
+		EF78CCB5199151A50042048F /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		EF78CCB8199151A50042048F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF78CCBA199151A50042048F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF78CCC0199151A50042048F /* SwiftagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF78CCC5199151A50042048F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF78CCC6199151A50042048F /* SwiftagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftagramTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF737C101992B12A00AE6A25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF78CCA8199151A50042048F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF737C281992B12A00AE6A25 /* designableViews.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF78CCBD199151A50042048F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF737C151992B12A00AE6A25 /* designableViews */ = {
+			isa = PBXGroup;
+			children = (
+				EF737C181992B12A00AE6A25 /* designableViews.h */,
+				EF737C331992B15100AE6A25 /* FilteredImageView.swift */,
+				EF737C161992B12A00AE6A25 /* Supporting Files */,
+			);
+			path = designableViews;
+			sourceTree = "<group>";
+		};
+		EF737C161992B12A00AE6A25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF737C171992B12A00AE6A25 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF78CCA2199151A40042048F = {
+			isa = PBXGroup;
+			children = (
+				EF78CCAD199151A50042048F /* Swiftagram */,
+				EF78CCC3199151A50042048F /* SwiftagramTests */,
+				EF737C151992B12A00AE6A25 /* designableViews */,
+				EF78CCAC199151A50042048F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF78CCAC199151A50042048F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF78CCAB199151A50042048F /* Swiftagram.app */,
+				EF78CCC0199151A50042048F /* SwiftagramTests.xctest */,
+				EF737C141992B12A00AE6A25 /* designableViews.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF78CCAD199151A50042048F /* Swiftagram */ = {
+			isa = PBXGroup;
+			children = (
+				EF78CCB0199151A50042048F /* AppDelegate.swift */,
+				EF78CCB5199151A50042048F /* PhotosViewController.swift */,
+				EF5662371991794100BB4E0B /* PhotosCollectionHeaderView.swift */,
+				EF78CCB7199151A50042048F /* Main.storyboard */,
+				EF78CCBA199151A50042048F /* Images.xcassets */,
+				EF78CCB2199151A50042048F /* Swiftagram.xcdatamodeld */,
+				EF78CCAE199151A50042048F /* Supporting Files */,
+			);
+			path = Swiftagram;
+			sourceTree = "<group>";
+		};
+		EF78CCAE199151A50042048F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF737C361992B38C00AE6A25 /* Bryce.jpg */,
+				EF737C371992B38C00AE6A25 /* Copenhagen.jpg */,
+				EF737C381992B38C00AE6A25 /* Flowers.jpg */,
+				EF737C391992B38C00AE6A25 /* Wolf.jpg */,
+				EF78CCAF199151A50042048F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF78CCC3199151A50042048F /* SwiftagramTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF78CCC6199151A50042048F /* SwiftagramTests.swift */,
+				EF78CCC4199151A50042048F /* Supporting Files */,
+			);
+			path = SwiftagramTests;
+			sourceTree = "<group>";
+		};
+		EF78CCC4199151A50042048F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF78CCC5199151A50042048F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EF737C111992B12A00AE6A25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF737C191992B12A00AE6A25 /* designableViews.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EF737C131992B12A00AE6A25 /* designableViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF737C301992B12A00AE6A25 /* Build configuration list for PBXNativeTarget "designableViews" */;
+			buildPhases = (
+				EF737C0F1992B12A00AE6A25 /* Sources */,
+				EF737C101992B12A00AE6A25 /* Frameworks */,
+				EF737C111992B12A00AE6A25 /* Headers */,
+				EF737C121992B12A00AE6A25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = designableViews;
+			productName = designableViews;
+			productReference = EF737C141992B12A00AE6A25 /* designableViews.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF78CCAA199151A50042048F /* Swiftagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF78CCCA199151A50042048F /* Build configuration list for PBXNativeTarget "Swiftagram" */;
+			buildPhases = (
+				EF78CCA7199151A50042048F /* Sources */,
+				EF78CCA8199151A50042048F /* Frameworks */,
+				EF78CCA9199151A50042048F /* Resources */,
+				EF737C311992B12A00AE6A25 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF737C271992B12A00AE6A25 /* PBXTargetDependency */,
+				EF737C2B1992B12A00AE6A25 /* PBXTargetDependency */,
+			);
+			name = Swiftagram;
+			productName = Swiftagram;
+			productReference = EF78CCAB199151A50042048F /* Swiftagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF78CCBF199151A50042048F /* SwiftagramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF78CCCD199151A50042048F /* Build configuration list for PBXNativeTarget "SwiftagramTests" */;
+			buildPhases = (
+				EF78CCBC199151A50042048F /* Sources */,
+				EF78CCBD199151A50042048F /* Frameworks */,
+				EF78CCBE199151A50042048F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF78CCC2199151A50042048F /* PBXTargetDependency */,
+			);
+			name = SwiftagramTests;
+			productName = SwiftagramTests;
+			productReference = EF78CCC0199151A50042048F /* SwiftagramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF78CCA3199151A40042048F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Learn Swift";
+				TargetAttributes = {
+					EF737C131992B12A00AE6A25 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					EF78CCAA199151A50042048F = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					EF78CCBF199151A50042048F = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = EF78CCAA199151A50042048F;
+					};
+				};
+			};
+			buildConfigurationList = EF78CCA6199151A40042048F /* Build configuration list for PBXProject "Swiftagram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF78CCA2199151A40042048F;
+			productRefGroup = EF78CCAC199151A50042048F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF78CCAA199151A50042048F /* Swiftagram */,
+				EF78CCBF199151A50042048F /* SwiftagramTests */,
+				EF737C131992B12A00AE6A25 /* designableViews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF737C121992B12A00AE6A25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF737C3B1992B38C00AE6A25 /* Bryce.jpg in Resources */,
+				EF737C3D1992B38C00AE6A25 /* Copenhagen.jpg in Resources */,
+				EF737C3F1992B38C00AE6A25 /* Flowers.jpg in Resources */,
+				EF737C411992B38C00AE6A25 /* Wolf.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF78CCA9199151A50042048F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF737C3E1992B38C00AE6A25 /* Flowers.jpg in Resources */,
+				EF737C3A1992B38C00AE6A25 /* Bryce.jpg in Resources */,
+				EF737C3C1992B38C00AE6A25 /* Copenhagen.jpg in Resources */,
+				EF78CCB9199151A50042048F /* Main.storyboard in Resources */,
+				EF78CCBB199151A50042048F /* Images.xcassets in Resources */,
+				EF737C401992B38C00AE6A25 /* Wolf.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF78CCBE199151A50042048F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF737C0F1992B12A00AE6A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF737C351992B15100AE6A25 /* FilteredImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF78CCA7199151A50042048F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5662381991794100BB4E0B /* PhotosCollectionHeaderView.swift in Sources */,
+				EF78CCB6199151A50042048F /* PhotosViewController.swift in Sources */,
+				EF78CCB4199151A50042048F /* Swiftagram.xcdatamodeld in Sources */,
+				EF78CCB1199151A50042048F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF78CCBC199151A50042048F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF78CCC7199151A50042048F /* SwiftagramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF737C271992B12A00AE6A25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF737C131992B12A00AE6A25 /* designableViews */;
+			targetProxy = EF737C261992B12A00AE6A25 /* PBXContainerItemProxy */;
+		};
+		EF737C2B1992B12A00AE6A25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF737C131992B12A00AE6A25 /* designableViews */;
+			targetProxy = EF737C2A1992B12A00AE6A25 /* PBXContainerItemProxy */;
+		};
+		EF78CCC2199151A50042048F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF78CCAA199151A50042048F /* Swiftagram */;
+			targetProxy = EF78CCC1199151A50042048F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF78CCB7199151A50042048F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF78CCB8199151A50042048F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF737C2C1992B12A00AE6A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = designableViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF737C2D1992B12A00AE6A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = designableViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF78CCC8199151A50042048F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF78CCC9199151A50042048F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF78CCCB199151A50042048F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Swiftagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF78CCCC199151A50042048F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Swiftagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF78CCCE199151A50042048F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swiftagram.app/Swiftagram";
+			};
+			name = Debug;
+		};
+		EF78CCCF199151A50042048F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swiftagram.app/Swiftagram";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF737C301992B12A00AE6A25 /* Build configuration list for PBXNativeTarget "designableViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF737C2C1992B12A00AE6A25 /* Debug */,
+				EF737C2D1992B12A00AE6A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF78CCA6199151A40042048F /* Build configuration list for PBXProject "Swiftagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF78CCC8199151A50042048F /* Debug */,
+				EF78CCC9199151A50042048F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF78CCCA199151A50042048F /* Build configuration list for PBXNativeTarget "Swiftagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF78CCCB199151A50042048F /* Debug */,
+				EF78CCCC199151A50042048F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF78CCCD199151A50042048F /* Build configuration list for PBXNativeTarget "SwiftagramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF78CCCE199151A50042048F /* Debug */,
+				EF78CCCF199151A50042048F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF78CCB2199151A50042048F /* Swiftagram.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF78CCB3199151A50042048F /* Swiftagram.xcdatamodel */,
+			);
+			currentVersion = EF78CCB3199151A50042048F /* Swiftagram.xcdatamodel */;
+			path = Swiftagram.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF78CCA3199151A40042048F /* Project object */;
+}

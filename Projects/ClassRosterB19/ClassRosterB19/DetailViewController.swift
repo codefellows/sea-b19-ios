@@ -14,7 +14,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var lastNameTextField: UITextField?
     @IBOutlet var imageView : UIImageView?
     
-    let textFieldPadding = 100
+    let textFieldPadding : CGFloat = 100.0
     
     var person : Person!
 
@@ -48,7 +48,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         
         let currentWidth = self.view.bounds.width
         let currentHeight = self.view.bounds.height
-        let newY = 0 + textField.frame.origin.y - self.textFieldPadding
+        let newY = textField.frame.origin.y - self.textFieldPadding
         let currentX = self.view.bounds.origin.x
         
         UIView.animateWithDuration(0.3, animations:{ () -> Void

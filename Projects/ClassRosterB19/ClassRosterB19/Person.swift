@@ -30,10 +30,10 @@ class Person {
         
         for person in peopleArray {
             if let thePerson = person as? Dictionary<String, String> {
-                let firstName = thePerson["firstName"] as String
-                let lastName = thePerson["lastName"] as String
-                let newPerson = Person(firstName: firstName, lastName: lastName)
-                people += newPerson
+                let firstName = thePerson["firstName"]
+                let lastName = thePerson["lastName"]
+                let newPerson = Person(firstName: firstName!, lastName: lastName!)
+                people.append(newPerson)
             }
         }
         return people
