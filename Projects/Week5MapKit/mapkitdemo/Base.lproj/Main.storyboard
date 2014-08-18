@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mapkitdemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eym-0K-wSV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="504"/>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Long" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqL-CK-8Rr">
+                                <rect key="frame" x="189" y="550" width="223" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="223" id="RfI-hY-lY3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lat" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Fc-Qb-nzi">
+                                <rect key="frame" x="189" y="512" width="223" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="223" id="LyP-Oe-0qI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPv-fx-ezx">
+                                <rect key="frame" x="420" y="550" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gF5-Ne-x1t"/>
+                                    <constraint firstAttribute="width" constant="30" id="qvJ-dd-xIy"/>
+                                </constraints>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LKf-qO-xjH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="lqL-CK-8Rr" secondAttribute="centerX" id="0lR-iG-qbg"/>
+                            <constraint firstAttribute="centerX" secondItem="0Fc-Qb-nzi" secondAttribute="centerX" id="7DL-SD-HQz"/>
+                            <constraint firstItem="VPv-fx-ezx" firstAttribute="bottom" secondItem="lqL-CK-8Rr" secondAttribute="bottom" id="7Yu-3F-BgG"/>
+                            <constraint firstItem="lqL-CK-8Rr" firstAttribute="top" secondItem="0Fc-Qb-nzi" secondAttribute="bottom" constant="8" id="Fol-Gw-j48"/>
+                            <constraint firstItem="eym-0K-wSV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="cNC-PV-9ih"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lqL-CK-8Rr" secondAttribute="bottom" constant="20" id="dzq-Ex-UYh"/>
+                            <constraint firstItem="eym-0K-wSV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="kMY-rb-z5X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eym-0K-wSV" secondAttribute="trailing" constant="-16" id="mqd-Dw-jSb"/>
+                            <constraint firstItem="0Fc-Qb-nzi" firstAttribute="top" secondItem="eym-0K-wSV" secondAttribute="bottom" constant="8" id="nKk-zh-mcU"/>
+                            <constraint firstItem="VPv-fx-ezx" firstAttribute="leading" secondItem="lqL-CK-8Rr" secondAttribute="trailing" constant="8" id="s7m-w1-uvb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="latFIeld" destination="0Fc-Qb-nzi" id="822-29-gmq"/>
+                        <outlet property="longField" destination="lqL-CK-8Rr" id="xKp-RW-mjU"/>
+                        <outlet property="mapVIew" destination="eym-0K-wSV" id="ebj-zX-NdZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="297"/>
+        </scene>
+    </scenes>
+</document>
