@@ -45,7 +45,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         fetchRequest.sortDescriptors = [sort]
         fetchRequest.fetchBatchSize = 25
         
-        self.fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.myContext, sectionNameKeyPath: nil, cacheName: "Root")
+        self.fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.myContext, sectionNameKeyPath: nil, cacheName: nil)
         self.fetchedResultsController.delegate = self
     }
 
@@ -129,14 +129,14 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         }
         deleteAction.backgroundColor = UIColor.redColor()
         
-//        let editAction = UITableViewRowAction(style: .Default, title: "Edit") { (action, indexPath) -> Void in
-//            println("Edit Action")
-//            let cell = tableView.cellForRowAtIndexPath(indexPath) as UITableViewCell
-//            
-//        }
-//        editAction.backgroundColor = UIColor.lightGrayColor()
+        let editAction = UITableViewRowAction(style: .Default, title: "Edit") { (action, indexPath) -> Void in
+            println("Edit Action")
+            let cell = tableView.cellForRowAtIndexPath(indexPath) as UITableViewCell
+            
+        }
+        editAction.backgroundColor = UIColor.lightGrayColor()
 
-        return [deleteAction]
+        return [deleteAction, editAction]
     }
 }
 
