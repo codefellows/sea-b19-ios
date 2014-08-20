@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6220.8" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6220.8" systemVersion="14A314h" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Artist" representedClassName="CoreDataMusic.Artist" syncable="YES">
         <attribute name="firstName" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
@@ -8,7 +8,7 @@
     </entity>
     <entity name="Label" representedClassName="CoreDataMusic.Label" syncable="YES">
         <attribute name="name" attributeType="String" syncable="YES"/>
-        <relationship name="artists" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Artist" inverseName="label" inverseEntity="Artist" syncable="YES"/>
+        <relationship name="artists" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Artist" inverseName="label" inverseEntity="Artist" syncable="YES"/>
     </entity>
     <entity name="Song" representedClassName="CoreDataMusic.Song" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -16,8 +16,8 @@
         <relationship name="artist" maxCount="1" deletionRule="Nullify" destinationEntity="Artist" inverseName="songs" inverseEntity="Artist" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Label" positionX="-324" positionY="-216" width="128" height="73"/>
         <element name="Artist" positionX="-119" positionY="-117" width="128" height="103"/>
+        <element name="Label" positionX="-324" positionY="-216" width="128" height="75"/>
         <element name="Song" positionX="43" positionY="-1" width="128" height="88"/>
     </elements>
 </model>
