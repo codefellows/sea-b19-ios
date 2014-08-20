@@ -123,8 +123,9 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
             println("Delete Action")
             
             
-            var labelForRow = self.fetchedResultsController.fetchedObjects[indexPath.row] as Label
-            self.myContext.deleteObject(labelForRow)
+            if let labelForRow = self.fetchedResultsController.fetchedObjects[indexPath.row] as? Label {
+                self.myContext.deleteObject(labelForRow)                
+            }
         }
         deleteAction.backgroundColor = UIColor.redColor()
         
