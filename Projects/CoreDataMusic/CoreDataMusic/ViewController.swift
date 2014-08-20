@@ -128,6 +128,13 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         }
         deleteAction.backgroundColor = UIColor.redColor()
         
+//        let editAction = UITableViewRowAction(style: .Default, title: "Edit") { (action, indexPath) -> Void in
+//            println("Edit Action")
+//            let cell = tableView.cellForRowAtIndexPath(indexPath) as UITableViewCell
+//            
+//        }
+//        editAction.backgroundColor = UIColor.lightGrayColor()
+
         return [deleteAction]
     }
 }
