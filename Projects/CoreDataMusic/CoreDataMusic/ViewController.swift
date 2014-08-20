@@ -46,6 +46,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         fetchRequest.fetchBatchSize = 25
         
         self.fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.myContext, sectionNameKeyPath: nil, cacheName: "Root")
+        self.fetchedResultsController.delegate = self
     }
 
     @IBAction func addLabelPressed(sender: AnyObject) {
@@ -111,6 +112,23 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     func controllerDidChangeContent(controller: NSFetchedResultsController!) {
         self.tableView.endUpdates()
+    }
+    
+    //MARK: Table View Re-Ordering
+    func tableView(tableView: UITableView!, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath!) {
+        // don't need anything here, just have to implement it for the respondsToSelector test
+    }
+    func tableView(tableView: UITableView!, editActionsForRowAtIndexPath indexPath: NSIndexPath!) -> [AnyObject]! {
+        let deleteAction = UITableViewRowAction(style: .Default, title: "Delete") { (action, indexPath) -> Void in
+            println("Delete Action")
+            
+            
+            var labelForRow = self.fetchedResultsController.fetchedObjects[indexPath.row] as Label
+            self.myContext.deleteObject(labelForRow)
+        }
+        deleteAction.backgroundColor = UIColor.redColor()
+        
+        return [deleteAction]
     }
 }
 
