@@ -432,6 +432,7 @@
 				A2ECB6C519A3BCCD002DC696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2ECB6C619A3BCCD002DC696 /* Build configuration list for PBXNativeTarget "CoreDataMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +441,7 @@
 				A2ECB6C819A3BCCD002DC696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

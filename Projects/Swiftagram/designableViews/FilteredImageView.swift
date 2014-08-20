@@ -20,6 +20,14 @@ import UIKit
         }
     }
     
+    @IBInspectable var cornerRadius : CGFloat = 0.0 {
+        didSet {
+            self.layer.cornerRadius = cornerRadius
+            self.layer.masksToBounds = true
+            self.layer.setNeedsDisplay()
+        }
+    }
+    
     func coreImageBackedImage() -> CIImage {
         let ciImage = CIImage(CGImage: self.image.CGImage)
         return ciImage
