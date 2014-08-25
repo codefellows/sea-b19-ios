@@ -21,6 +21,8 @@ class ViewController: UIViewController,UITextFieldDelegate,MKMapViewDelegate,CLL
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         self.locationManager.delegate = self
         
         switch CLLocationManager.authorizationStatus() as CLAuthorizationStatus {
@@ -172,6 +174,12 @@ class ViewController: UIViewController,UITextFieldDelegate,MKMapViewDelegate,CLL
     
     func locationManager(manager: CLLocationManager!, didEnterRegion region: CLRegion!) {
         println("did enter region")
+        
+        var notification = UILocalNotification()
+        notification.alertBody = "Hey you entered a region!"
+        notification.alertAction = "Click here!"
+        UIApplication.sharedApplication().presentLocalNotificationNow(notification)
+        
     }
     
     func locationManager(manager: CLLocationManager!, didExitRegion region: CLRegion!) {
