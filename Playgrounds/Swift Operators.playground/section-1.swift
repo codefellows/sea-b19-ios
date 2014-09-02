@@ -13,7 +13,7 @@ var array = [1, 2, 3, 4, 5, 6]
 
 var rowCount = array.count > 5 ? array.count : 5
 
-func * (left: String, right: Int) -> String {
+ func * (left: String, right: Int) -> String {
     if right <= 0 {
         return ""
     }
